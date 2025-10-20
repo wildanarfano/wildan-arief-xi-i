@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HTML</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /*hero section*/
+    .tentang {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      max-width: 900px;
+      margin: auto;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      overflow: hidden;
+    }
+    .gambar {
+      flex: 1;
+    }
+    .gambar img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    .teks {
+      flex: 1;
+      padding: 30px;
+    }
+    .teks h2 {
+      margin-top: 0;
+      font-size: 28px;
+      color: #333;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+    }
+    .teks p{
+      font-size: 16px;
+      color: #555;
+      line.height: 1.6;
+    }
+    /*konten*/
+    main{
+      flex: 1; /* biar ngisi ruang kosong*/
+      padding: 20px;
+      text-align: center;
+      padding: 10px;
+      margin-top: 20px;
+    }
+    /*responsive HP*/
+    @media (max-width: 768px) {
+      .tentang {
+        flex-direction: column;
+      }
+      .gambar img {
+        border-bottom: 1px solid #eee;
+      }
+    }
+    .container{
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+    .card{
+      flex: 1;
+      min-width: 250px;
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+    }
+    h2 {
+      margin-top: 0;
+      color: #333;
+      text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+    }
+    ul, ol {
+      padding-left: 20px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>SMA NEGERI 9</h1>
+    <p>selamat datang di website sekolah kami</p>
+  </header>
+  <nav>
+    <a href="index.html">home</a>
+    <a href="tentang.html">profil</a>
+    <a href="visi-misi.html" style="color:yellow">visi-misi</a>
+    <a href="eskul.html">Eskul</a>
+    <a href="kontak.html">kontak</a>
+  </nav>
+  <main>
+   <section class="container">
+     <div class="card">
+    <h2>visi</h2>
+    <p>
+     "menjadi sekolah unggul dalam prestasi, berkarakter, dan berwawasan lingkungan"
+     </p>
+     </div>
+     <div class="card">
+     <h2>misi</h2>
+     <ol>
+     <li>Meningkatkan kualitas pembelajaran.</li>
+     <li>mengembangkan potensi siswa secara optimal.</li>
+     <li>membentuk karakter disiplin dan tanggung jawab.</li>
+     <li>menciptakan lingkungan belajar yang nyaman dan bersih.</li>
+     </ol>
+     </div>
+   </section>
+  </main>
+  
+  
+  <footer>
+    &copy; 2025 SMA NEGERI 9 Cirebon
+  </footer>
+  
+</body>
+</html>

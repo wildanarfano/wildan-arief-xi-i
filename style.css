@@ -1,0 +1,71 @@
+body {
+    margin: 0;
+    font-family:Arial, sans-sertf;
+}
+header {
+    background: #0d47a1;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+nav {
+    background: blue;
+    padding: 10px;
+    text-align: center;
+}
+nav a{
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+nav a:hover {
+    color: yellow;
+}
+
+/* Hero Section */
+.hero {
+    height: 70vh;
+    background: url('foto1.jpg') no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-shadow: 2px 2px 5px black;
+    text-align: center;
+    margin:0;
+    padding:0;
+}
+.hero h1 {
+    font-size: 40px;
+    margin:0;
+}
+.hero p {
+    font-size: 20px;
+}
+.hero button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    border: none;
+    background: yellow;
+    color: #0d47a1;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.hero button:hover {
+    background: orange;
+    color: white;
+}
+/* konten*/
+main {
+    padding: 20px;
+    text-align: center;
+}
+footer {
+    background: #0d47a1;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
